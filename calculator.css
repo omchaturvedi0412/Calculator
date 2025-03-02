@@ -1,0 +1,59 @@
+.calculator {
+    background-color: grey;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: center;
+    height: 550px; /* Adjust height for a better fit */
+}
+
+.screen {
+    background-color: aliceblue;
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 2em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    color: black; /* Text color */
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: darkgray;
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+button:active {
+    background-color: #ccc;
+    transform: scale(0.95); /* Shrinks the button to give a pressed effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow to simulate pressing */
+}
+
+button:focus {
+    outline: none; /* Removes the default outline */
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 255, 0.6); /* Adds a blue outline effect */
+}
