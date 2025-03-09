@@ -73,4 +73,3 @@ document.querySelector('.decimal').addEventListener('click', () => {
     updateScreen();
   }
 });
-
